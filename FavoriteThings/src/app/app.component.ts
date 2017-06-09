@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Favorite Things';
+  favoriteColor = 'gray';
+
+  setColor(selectedColor: string): void {
+      console.log('You have selected the color' + selectedColor);
+      this.favoriteColor = selectedColor;
+  }
 }
